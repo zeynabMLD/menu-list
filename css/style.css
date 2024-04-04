@@ -1,0 +1,191 @@
+@font-face{
+    font-family: 'iranFamily';
+    src: url('../font/iranFamily/eot'); 
+    src: url('../font/iranFamily/ttf')  format('truetype'),
+         url('../font/iranFamily/woff2') format('woff2'),
+         url('../font/iranFamily/woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'iranFamily';
+    direction: rtl;
+    
+    height: 100vh;
+    background: url('../img/Jowhareh_galleries_8_poster_1648bfaa-466a-43b9-93e2-3a07d53dc7f8.jpeg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* .section{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    
+}
+
+.container .menuopen{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 25px;
+    background-color: black;
+    cursor: pointer;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.container .menuopen:hover{
+    color: yellow;
+}
+
+.layer1{
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition-delay: .9s;
+}
+
+
+.layer2,.layer3,.layer4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.layer2{
+    background-color: red;
+    width: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition-delay: .7s;
+}
+
+.layer3{
+    background-color: #000;
+    width: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition-delay: .5s;
+}
+
+.layer4{
+    background-color: rgb(221, 212, 212);
+    width: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.menuclose {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+    transition:all .3s ease-in;
+    -moz-transition:all .3s ease-in;
+    -ms-transition:all .3s ease-in;
+    -o-transition:all .3s ease-in;
+    -webkit-transition:all .3s ease-in;
+}
+
+.menuclose:hover{
+    color: yellow;
+    
+}
+
+.links{
+    position: absolute;
+    top:20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.layer1.check{
+    width: 282px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition-delay: .3s;
+    
+}
+
+.check .layer2{
+    width: 272px;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.check .layer3{
+    width: 262px;
+    transition: .5s;
+    transition-delay: .7s;
+}
+
+.check .layer4{
+    width: 250px;
+    transition: .5s;
+    transition-delay: .9s;
+}
